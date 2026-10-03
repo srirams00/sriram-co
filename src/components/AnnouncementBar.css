@@ -1,0 +1,40 @@
+.announcement-bar {
+  background-color: var(--color-announcement);
+  color: #244633;
+  font-size: 12.5px;
+  font-weight: 500;
+  padding: 7px 0;
+  border-bottom: 1px solid rgba(23, 107, 69, 0.08);
+  letter-spacing: 0.01em;
+}
+
+.announcement-text {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 0;
+}
+
+.announcement-highlight {
+  font-weight: 600;
+}
+
+.announcement-dot {
+  opacity: 0.45;
+  font-size: 10px;
+}
+
+@media (max-width: 640px) {
+  .announcement-bar {
+    font-size: 11.5px;
+    padding: 6px 0;
+  }
+  .announcement-text span:last-child {
+    display: none;
+  }
+  .announcement-dot {
+    display: none;
+  }
+}
